@@ -1,12 +1,49 @@
-# React + Vite
+# Vijay Kumar Singh — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Premium, responsive portfolio built with React 19 and Vite. The site is configured for GitHub Pages at:
 
-Currently, two official plugins are available:
+`https://codexai06.github.io/portfolio/`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Highlights
 
-## Expanding the ESLint configuration
+- Dark, responsive editorial layout with reduced-motion support.
+- Centralized portfolio content in `src/data/profile.js`.
+- Bundled resume download from `src/assets/resume.pdf`.
+- Accessible keyboard-friendly navigation, labels, focus states, and semantic sections.
+- Verified project links:
+  - [ReliefLink](https://github.com/codeXAI06/ReliefLink)
+  - [Fair Maps](https://github.com/codeXAI06/Fair-Maps)
+  - [AQI Prediction Web App](https://github.com/codeXAI06/aqi)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No live demo URLs were added because the project repositories do not currently expose a verified deployment URL. Update `src/data/profile.js` if a deployment is published.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite. The app is served under `/portfolio/` to match the GitHub Pages base path.
+
+## Quality checks
+
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+## Deploy to GitHub Pages
+
+1. Confirm the `homepage` value in `package.json` matches the repository URL.
+2. Build and deploy:
+
+   ```bash
+   npm run deploy
+   ```
+
+3. In GitHub, open **Settings → Pages**, select the `gh-pages` branch and `/ (root)`.
+4. Open `https://codexai06.github.io/portfolio/` after the Pages workflow finishes.
+
+The repository includes `.nojekyll` and Vite is configured with `base: '/portfolio/'`, so static asset paths work on the project site.
